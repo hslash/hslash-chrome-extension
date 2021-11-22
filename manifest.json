@@ -1,0 +1,28 @@
+{
+    "manifest_version" : 2,
+    "name" : "hslash",
+    "version" : "0.0.1",
+    "description": "Extension to keep track of your links",
+    "icons" : {
+      "16": "icons/slash48.png",
+      "48": "icons/slash48.png",
+      "128" : "icons/slash128.png"
+    },
+    "browser_action": {
+      "default_title": "Your links here",
+      "default_popup": "src/index.html"
+    },
+    "background": {
+      "scripts": [
+        "src/background.js"
+      ],
+      "persistent": true
+    },
+    "permissions": [
+      "storage",
+      "webRequest",
+      "webRequestBlocking",
+      "tabs",
+      "<all_urls>"
+    ]
+ }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Tracker</title>
+  <link href="css/semantic.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="ui container">
+    <h4 class="ui header">
+      <img class="ui image" src="../icons/slash48.png">
+      <div class="content">
+        New Shortcut
+      </div>
+    </h4>  
+  </div>
+
+  <div class="ui inverted divider"></div>
+
+  <div class="ui container">
+      <div class="ui fluid input">
+        <input type="text" placeholder="Destination Link" id="link" required>
+      </div>
+      <br />
+      <div class="ui fluid labeled input">
+      
+        <div class="ui label">
+          h/
+        </div>
+        <input type="text" placeholder="shortcut-name" id="shortcut" required>
+      </div>
+  </div>
+
+  <div class="ui inverted divider"></div>
+
+  <div class="ui container">
+    <div class="ui buttons right floated">
+      <button class="ui button" id="close">Close</button>
+      <div class="or"></div>
+      <button class="ui positive button" id="save">Save</button>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
